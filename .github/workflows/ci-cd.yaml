@@ -11,7 +11,7 @@ on:
     manual_test_pipeline:
       runs-on: ubuntu-latest
       steps:
-        -name: checkout code
+        -name: checkout_code
           uses: actions/checkout@v3
         -name: run test   
           run: echo "this is my first ci cd pipeline"
