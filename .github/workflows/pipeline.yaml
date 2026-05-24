@@ -1,0 +1,13 @@
+name: github actions pipeline
+on:
+  pull_request:
+    branches:
+      - main
+  jobs:
+    Estudando pipeline CI_CD:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout
+          uses: actions/checkout@v3
+        - run: echo "Hello World"
+        
